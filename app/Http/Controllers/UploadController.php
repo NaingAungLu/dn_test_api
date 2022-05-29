@@ -18,7 +18,7 @@ class UploadController extends Controller
 
         return response()->success([
             'path' => $path,
-            'url' => asset($path)
+            'url' => Storage::url($path),
         ]);
     }
 }

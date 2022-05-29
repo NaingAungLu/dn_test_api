@@ -51,8 +51,8 @@ class TestForLogicCommand extends Command
     {
         $total = 0;
 
-        foreach ($inputArray as $key => $val) {
-            if ($val == 0) {
+        foreach ($inputArray as $key => $value) {
+            if ($value == 0) {
                 unset($inputArray[$key]);
                 $total++;
             }
